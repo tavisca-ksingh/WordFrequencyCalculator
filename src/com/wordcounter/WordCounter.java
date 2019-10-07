@@ -21,6 +21,9 @@ public class WordCounter {
         for(String values : hash_Set){
         countWord(values);
           }
+        //System.out.println(wordCount);
+
+        wordCount.forEach((K,V)-> System.out.println(String.format("%-20s %d", K,V)));
     }
     private static void createSet( BufferedReader br) throws IOException {
         String line;
